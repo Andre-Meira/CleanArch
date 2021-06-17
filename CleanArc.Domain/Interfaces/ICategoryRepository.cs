@@ -14,9 +14,6 @@ namespace CleanArc.Domain.Interfaces
 		Task<Category> CreateAsync(Category category);
 		Task<Category> DeleteAsync(Category category);
 		Task<Category> UpdateAsync(Category category);
-
-
-
 	}
-
+	
 }
