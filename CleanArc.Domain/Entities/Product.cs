@@ -42,7 +42,7 @@ namespace CleanArc.Domain.Entities
 			DomainExecpetionValidation.When(string.IsNullOrEmpty(name), 
 				"Invalid name. Name is required!");
 			DomainExecpetionValidation.When(name.Length < 3,
-				"Invalid name, too short, minimum 3 caracters!");
+				"Invalid Name, too short, minimum 3 caracters!");
 			DomainExecpetionValidation.When(string.IsNullOrEmpty(description),
 				"Invalid description. Description is required!");
 			DomainExecpetionValidation.When(description.Length < 5,

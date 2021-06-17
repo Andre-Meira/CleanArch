@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CleanArc.Domain.Validation
 {
-	public class DomainExecpetionValidation : Exception
+	class DomainExecpetionValidation : Exception
 	{
 		public DomainExecpetionValidation(string error) : base(error) { }
 

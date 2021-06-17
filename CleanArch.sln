@@ -9,17 +9,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MVC", "MVC", "{5317AF32-2A03-41F8-9C60-4F18FC1BD587}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArc.Domain", "CleanArc.Domain\CleanArc.Domain.csproj", "{FD49CD97-296F-4C4E-91EB-58ED24557F65}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArc.Domain", "CleanArc.Domain\CleanArc.Domain.csproj", "{FD49CD97-296F-4C4E-91EB-58ED24557F65}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Application", "CleanArch.Application\CleanArch.Application.csproj", "{0D39F602-AA44-4C6E-BDC6-616594025F7F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Application", "CleanArch.Application\CleanArch.Application.csproj", "{0D39F602-AA44-4C6E-BDC6-616594025F7F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Infra.Data", "CleanArch.Infra.Data\CleanArch.Infra.Data.csproj", "{091237A3-7267-4F91-8205-714B9756CF77}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Infra.Data", "CleanArch.Infra.Data\CleanArch.Infra.Data.csproj", "{091237A3-7267-4F91-8205-714B9756CF77}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Infra.Ioc", "CleanArch.Infra.Ioc\CleanArch.Infra.Ioc.csproj", "{D7890AAD-AC28-4BE8-9534-0724822E262F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Infra.Ioc", "CleanArch.Infra.Ioc\CleanArch.Infra.Ioc.csproj", "{D7890AAD-AC28-4BE8-9534-0724822E262F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.WebUI", "CleanArch.WebUI\CleanArch.WebUI.csproj", "{23C97539-3B1D-4C05-88FD-524B2A00CD29}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Domain.Tests", "CleanArch.Domain.Tests\CleanArch.Domain.Tests.csproj", "{90EB5674-126C-4640-A78E-4AA93FEFD710}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.WebUI", "CleanArch.WebUI\CleanArch.WebUI.csproj", "{23C97539-3B1D-4C05-88FD-524B2A00CD29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +45,6 @@ Global
 		{23C97539-3B1D-4C05-88FD-524B2A00CD29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23C97539-3B1D-4C05-88FD-524B2A00CD29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23C97539-3B1D-4C05-88FD-524B2A00CD29}.Release|Any CPU.Build.0 = Release|Any CPU
-		{90EB5674-126C-4640-A78E-4AA93FEFD710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{90EB5674-126C-4640-A78E-4AA93FEFD710}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{90EB5674-126C-4640-A78E-4AA93FEFD710}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{90EB5674-126C-4640-A78E-4AA93FEFD710}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
