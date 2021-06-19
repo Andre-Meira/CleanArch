@@ -49,7 +49,7 @@ namespace CleanArc.Domain.Entities
 				"Invalid Description, too short, minimum 5 caracters!");
 			DomainExecpetionValidation.When(price < 0, "Invalid price value!");
 			DomainExecpetionValidation.When(stock < 0, "Invalid stock value!");
-			DomainExecpetionValidation.When(image.Length > 250,
+			DomainExecpetionValidation.When(image?.Length > 250,
 				"Invalid image name, too long, maximum 250 caracters!");
 
 			Name = name;
