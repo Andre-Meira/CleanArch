@@ -14,6 +14,8 @@ namespace CleanArc.Domain.Entities
 		public decimal Price { get; private set; }
 		public int Stock { get; private set; }
 		public string Image { get; private set; }
+		public int CategoryId { get; set; }
+		public Category Category { get; set; }
 
 		public Product(string name, string description, decimal price, int stock, string image) 
 		{
@@ -34,8 +36,6 @@ namespace CleanArc.Domain.Entities
 			CategoryId = categoryId;
 		}
 
-		public int CategoryId { get; set; }
-		public Category Category { get; set; }
 
 		private void ValidateDomain(string name, string description, decimal price, int stock, string image) 
 		{
