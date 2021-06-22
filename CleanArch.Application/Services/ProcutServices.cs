@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CleanArch.Application.Services
 {
-	class ProcutServices : IProductServices
+	public class ProcutServices : IProductServices
 	{
 		private IProductRepository _productRepository;
 		private readonly IMapper _mapper;
@@ -19,38 +19,38 @@ namespace CleanArch.Application.Services
 			_mapper = mapper;
 		}
 
-		public async Task<ProductDTO> GetById(int? id)
+		public async Task<ProductDTO> GetByIdAsync(int? id)
 		{
 			var categoryEntity = await _productRepository.GetByIdAsync(id);
 			return _mapper.Map<ProductDTO>(categoryEntity);
 		}
 
-		public async Task<IEnumerable<ProductDTO>> GetProducts()
+		public async Task<IEnumerable<ProductDTO>> GetProductsAsync()
 		{
 			var categoreisEntity = await _productRepository.GetCategoriesAsync();
 			return _mapper.Map<IEnumerable<ProductDTO>>(categoreisEntity);
 		}
 
-		public async Task<ProductDTO> GetProductCategory(int? id)
+		public async Task<ProductDTO> GetProductCategoryAsync(int? id)
 		{
 			var categoryEntity = await _productRepository.getProductCategoryAsync(id);
 			return _mapper.Map<ProductDTO>(categoryEntity);
 		}
 
-		public async Task Add(ProductDTO product)
+		public async Task AddAsync(ProductDTO product)
 		{
 			var categoryEntity = _mapper.Map<Product>(product);
 			await _productRepository.CreateAsync(categoryEntity);
 		}
 
 
-		public async Task Update(ProductDTO product)
+		public async Task UpdateAsync(ProductDTO product)
 		{
 			var categoryEntity = _mapper.Map<Product>(product);
 			await _productRepository.UpdateAsync(categoryEntity);
 		}
 
-		public async Task Remove(int? id)
+		public async Task RemoveAsync(int? id)
 		{
 			var categoryEntity = _productRepository.GetByIdAsync(id).Result;
 			await _productRepository.RemoveAsync(categoryEntity);
