@@ -36,7 +36,6 @@ namespace CleanArc.Domain.Entities
 			CategoryId = categoryId;
 		}
 
-
 		private void ValidateDomain(string name, string description, decimal price, int stock, string image) 
 		{
 			DomainExecpetionValidation.When(string.IsNullOrEmpty(name), 
@@ -59,6 +58,5 @@ namespace CleanArc.Domain.Entities
 			Image = image;
 
 		}
-
 	}
 }
